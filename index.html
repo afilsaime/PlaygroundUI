@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/uikit.js"></script>
+        <script type="text/javascript" src="js/components/slider.min.js"></script>
+        <script type="text/javascript" src="js/components/sticky.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/components/slider.min.css">
+        <link rel="stylesheet" type="text/css" href="css/components/sticky.min.css">
+        <link rel="stylesheet" type="text/css" href="homestyle.css"/>
+    </head>
+    <body>
+    	<div class="uk-grid uk-grid-collapse">
+    		<div id="sticky-zone" class="uk-width-1-1">
+	    		<nav id="#myNav" class="uk-navbar uk-width-1-1" data-uk-sticky="{boundary: true}">
+	    			<ul class="uk-navbar-nav">
+	    				<li class="orange"><a href="#"><img src="img/logo_telemeta_2.png" /></a></li>
+	    				<li class="light-orange uk-parent" data-uk-dropdown>
+	    					<a href="#">Archives</a>
+	    					<div id="archiveDrop" class="uk-dropdown uk-dropdown-navbar">
+	                			<ul class="uk-nav uk-nav-navbar">
+	                    			<li><a href="">Fonds</a></li>
+	                    			<li><a href="">Corpus</a></li>
+	                    			<li><a href="">Collections</a></li>
+	                    			<li><a href="">Items</a></li>
+	                			</ul>
+	           				 </div>
+	    				</li>
+	    				<li class="yellow"><a href="#">Geo-Navigation</a></li>
+	    				<li class="dark-orange"><a href="#">Recherche Avancée</a></li>
+	    			</ul>
+	    			<div class="uk-navbar-flip">
+	    				<ul class="uk-navbar-nav">
+	    					<li class="parameters uk-parent" data-uk-dropdown>
+	    						<a href="#"><i class="uk-icon-navicon"></i></a>
+	    						<div id="paramDrop" class="uk-dropdown uk-dropdown-navbar">
+		                			<ul class="uk-nav uk-nav-navbar">
+		                    			<li><a href="#aide" data-uk-modal><i class="uk-icon-question"></i> Aide</a></li>
+		                    			<li><a href="#connexion" data-uk-modal><i class="uk-icon-user"></i> Connexion</a></li>
+		                			</ul>
+		           				 </div>
+	    					</li>
+	    					<li class="dark-red"><a href="#off" data-uk-offcanvas><i class="uk-icon-search"></i></a></li>
+	    				</ul>
+	    			</div>
+	    		</nav>
+	    		<div id="off" class="uk-offcanvas">
+	    			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+	    				<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+	    					<li>
+	    						<form class="uk-form">
+	    							<input type="text" class="uk-width-1-1 " placeholder="Search">
+	    						</form>
+	    					</li>
+	    					<li class="uk-nav-header"><i class="uk-icon-filter"></i> Filters</li>
+	    					<li class="uk-parent">
+						    	<a href="#">Item Status</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">Unpublished <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						            <li><a href="#">Published <div class="uk-badge uk-badge-notification uk-align-center ">1337</div></a></li>
+						        </ul>
+						    </li>
+						    <li class="uk-parent">
+						    	<a href="#">Player Status</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">Sound <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						        </ul>
+						    </li> 
+						    <li class="uk-parent">
+						    	<a href="#">Access Right</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">viewable <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						        </ul>
+						    </li>
+						    <li class="uk-parent">
+						    	<a href="#">Media Type</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">Audio <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						            <li><a href="#">Video <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						        </ul>
+						    </li>
+						    <li class="uk-parent">
+						    	<a href="#">Recording Context</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">Terrain <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						            <li><a href="#">Studio <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						            <li><a href="#">Radio <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						        </ul>
+						    </li>
+						    <li class="uk-parent">
+						    	<a href="#">Physical Format</a>
+						        <ul class="uk-nav-sub">
+						            <li><a href="#">CDR <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						            <li><a href="#">Cylindre <div class="uk-badge uk-badge-notification uk-align-center">1337</div></a></li>
+						        </ul>
+						    </li>
+						    <li>
+	    						<button class="uk-button uk-width-1-1 uk-animation-hover uk-animation-shake"><i class="uk-icon-search"></i> Search</button>
+	    					</li>   				
+	    				</ul>
+	    			</div>
+				</div>
+	    		<div id="home-img" class="uk-width-1-1">
+	    			<figure class="uk-overlay uk-width-1-1">
+				    	<img class="uk-width-1-1"><!--<img src="img/evolution-support-audio.jpg" class="uk-width-1-1" alt="">-->
+				    	<figcaption class="uk-overlay-panel uk-overlay-background">
+				    		<section class="uk-width-6-10 uk-align-center" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
+				    			<h1>Archives sonores du CNRS - Musée de l'Homme</h1><br>
+					    		<p>
+					    			Le fonds d’archives sonores du CNRS – Musée de l’Homme rassemble des enregistrements inédits et publiés de musique et de traditions orales du monde entier, de 1900 à nos jours. Constitué de supports variés (cylindres, 78 tours, disques vinyles, cassettes, supports numériques), ce fonds se positionne parmi les plus importants d’Europe en terme de qualité, de quantité et de diversité.<br><br>
+									Pour une présentation historique du fonds, <a href="#">voir le site du CREM.</a>
+					    		</p>
+				    		</section>
+				    		<button class="uk-button uk-width-2-10 uk-align-center" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true, delay:200}"><i class="uk-icon-chevron-right"></i> Access to free public sound items</button>
+				    	</figcaption>
+					</figure>
+	    		</div>
+    		</div>
+    		<div id="block-1" class="uk-block-default uk-width-1-1">
+    			<div class="uk-grid">
+    				<div class="uk-width-8-10 uk-align-center">
+    					<div class="uk-grid">
+			    			<div id="bullhorn" class="uk-width-2-10" >
+			    				<span class="uk-icon-bullhorn" data-uk-scrollspy="{cls:'uk-animation-slide-left'}"></span>
+			    			</div>
+			    			<div class="uk-width-7-10" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+			    				<h1>Actualités</h1>
+			    				<ul>
+			    					<li>Les archives du CREM/LESC participent au projet de portail sonore européen (2014-2017) : <a href="#">Europeana Sounds.</a></li>
+			    					<li>Les options d'affichage du lecteur audio sont en cours d'élaboration par l'ANR <a href="#">DIADEMS</a>. Etant en phase expérimentale, ces outils ne sont pas encore tous opérationnels. Merci de votre compréhension.</li>
+			    				<ul>
+			    			</div>
+			    		</div>
+		    		</div>
+	    		</div>
+    		</div>
+    		<div id="block-2" class="uk-block-default uk-block-large uk-width-1-1">
+    			<div class="uk-grid">
+	    			<div class="uk-width-8-10 uk-align-center">
+	    				<div class="uk-grid">
+		    				<div class="uk-width-7-10 " data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+		    					<h1>Contenu</h1>
+			    				<p>Géré par le <a href="#">Centre de Recherche en Ethnomusicologie</a> (CREM) cette base de données répertorie :</p>
+			    					<ul>
+				    					<li>Plus de 35 000 documents inédits, dont 2/3 sonorisés, dans plus de 1 000 collections, représentant près de 4 000 heures d'enregistrements de terrain non publiés.</li>
+										<li>Plus de 13 000 enregistrements édités, dont 3 000 sonorisés, dans plus de 4 600 collections, pour environ 3 700 heures (incluant plus de 5 000 disques dont beaucoup sont très rares).</li>
+										<li>199 pays sont représentés à travers plus de 1 200 groupes ethniques ou sociaux, donnant à entendre une large palette d’expressions musicales et chantées, de langues et de dialectes.</li>
+			    					</ul>
+			    				<p>Actuellement, plus de 12 000 enregistrements sont en libre accès. Certains sont consultables avec un code d'accès. Pour l'obtenir écrivez à crem.lesc@mae.u-paris10.fr en expliquant les motifs de votre demande. Le fonds d'archives est également consultable sur les postes dédiés disponibles au <a href="#">CREM</a>, à la <a href=""> Bibliothèque Eric de Dampierre </a>, à la <a href=""> Médiathèque du Musée du Quai Branly </a> et à la <a href="#">Bibliothèque du Muséum National d’Histoire Naturelle.</a></p>
+			    			</div>
+			    			<div id="fileicon" class="uk-width-2-10 uk-align-right" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+			    				<span class="uk-icon-file-text-o"></span>
+			    			</div>
+			    		</div>
+			    	</div>
+    			</div>
+    		</div>
+    		<div id="block-3" class="uk-block-default uk-block-large uk-width-1-1">
+    			<div class="uk-grid">
+    				<div class="uk-width-8-10 uk-align-center">
+	    				<div class="uk-grid">
+			    			<div id="map" class="uk-width-2-10" >
+			    				<span class="uk-icon-map-o" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}"></span>
+			    			</div>
+			    			<div class="uk-width-7-10" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+			    				<h1>Organisation du catalogue</h1>
+			    				<ul>
+			    					<li>Le catalogue est organisé en 4 niveaux : Fonds, Corpus, Collection et Items. Le niveau principal de description est la Collection. Chacune regroupe un ensemble cohérent de fichiers audio (items) correspondant le plus souvent à des enregistrements collectés au cours d’une même mission de recherche ou à un disque publié. Certaines collections sont elles-mêmes regroupées en corpus et en fonds associés à des collecteurs.</li>
+			    					<li>Le nombre d’enregistrements mis en ligne sur la plateforme est en constante augmentation.</li>
+			    					<li>Les fiches descriptives sont renseignées de manière collaborative par les usagers de la plateforme : chercheurs, étudiants, documentalistes.</li>
+			    				</ul>
+			    				<p>Le CREM accueille toutes les collaborations visant à enrichir et valoriser ce précieux patrimoine. Ecrivez-nous à crem.lesc@mae.u-paris10.fr.</p>
+			    			</div>
+			    		</div>
+			    	</div>
+	    		</div>
+    		</div>
+    		<div id="blockslider" class="uk-block-default uk-block-large uk-width-1-1">
+    			<div id="slider" class="uk-width-1-1" data-uk-slider="{autoplay:true,autoplayInterval:2000,center:true,pauseOnHover:false}">
+				    <div class="uk-slider-container">
+				        <ul class="uk-slider uk-grid uk-grid-width-1-6">
+				            <li><img id="cnrs" src="img/logo-CNRS.png"></li>
+				            <li><img id="mcc" src="img/logo_mcc_2.png"></li>
+				            <li><img id="mnhn" src="img/logo-MNHN.png"></li>
+				            <li><img id="upx" src="img/Logo_UPX.png"></li>
+				            <li><img id="parisson" src="img/parisson_logo_125_72.png"></li>
+				            <li><img id="humanum" src="img/logohumanum.png"></li>
+				            <li><img id="europeana" src="img/Europeana_sounds_landscape_2.jpg"></li>
+				        </ul>
+				    </div>
+				</div>	
+    		</div>
+    		<div id="footer" class="uk-block-default uk-block-large uk-width-1-1" >
+    			<div class="uk-grid">
+    				<div id="logofooter" class="uk-width-1-10" >
+    					<img src="img/logo_mini_2.png" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+    				</div>
+    				<div class="uk-width-4-10 uk-push-1-4" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+    					<p>Usage des archives réservé dans le respect du patrimoine culturel des communautés d'origine.</p>
+    				</div>
+    				<div id="footer-right-side" class="uk-width-3-10 uk-push-2-10" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+    					<p>Copyright © 2015 CREM-CNRS<br><a href="#">Mentions légales</a></p>
+    				</div>
+    			</div>
+    		</div>
+    		<div id="connexion" class="uk-modal">
+    			<div class="uk-modal-dialog">
+    				<a class="uk-modal-close uk-close"></a>
+    				<div class="uk-modal-header uk-text-center"><h2><i class="uk-icon-user"></i> Identification<h2></div>
+    				<hr>
+    				<div class="uk-grid">
+    					<form class="uk-form uk-form-stacked uk-width-1-1">
+    						<label class="uk-form-label">Nom d'utilisateur</label>
+    						<div class="uk-form-icon uk-width-1-1">
+    							<i class="uk-icon-child"></i><input class="uk-width-1-1" type="text">
+    						</div>
+    						<label class="uk-form-label">Mot de passe</label>
+    						<div class="uk-form-icon uk-width-1-1">
+    							<i class="uk-icon-key"></i><input class="uk-width-1-1" type="password">
+    						</div>
+    						<a href="#">Mot de passe oublié?</a>
+    						<button class="uk-button uk-width-1-1 uk-animation-hover uk-animation-shake"><i class="uk-icon-sign-in"></i> Connexion</button>
+    					</form>
+    				</div>
+    			</div>
+    		</div>
+    		<div id="aide" class="uk-modal">
+    			<div class="uk-modal-dialog">
+    				<a class="uk-modal-close uk-close"></a>
+    				<div class="uk-modal-header uk-text-center"><h2><i class="uk-icon-users"></i> Pages d'aide de Telemeta<h2></div>
+    				<hr>
+    				<div class="uk-grid">
+    					<dl class="uk-description-list-line uk-width-1-1">
+						    <dt>Pour obtenir un accès spécifique à l'ensemble des archives du CREM hébergé sur ce site, merci de contacter :</dt>
+						    <dd>Aude Julien (aude.da-cruz-lima@mae.u-paris10.fr) </dd>
+						    <dt>Pour obtenir une aide technique, merci de vous inscrire à la mailing liste de Telemeta :</dt>
+						    <dd><a hreh="#">http://lists.parisson.com/cgi-bin/mailman/listinfo/telemeta</a></dd>
+						    <dt>ou bien contacter la hotline parisson par e-mail :</dt>
+						    <dd><a hreh="#">support@parisson.com</a></dd>
+						    <dt>ou twitter :</dt>
+						    <dd><a href="#"> http://twitter.com/telemeta</a></dd>
+						    <dt>Pour plus d'informations sur le système Telemeta, voir <a href="#">telemeta.org</a></dt>
+						    <dt>Telemeta utilise la librairie audio TimeSide : <a href="#">code.google.com/p/timeside/</a></dt>
+						</dl>
+    				</div>
+    			</div>
+    		</div>
+		</div>
+    </body>
+</html>

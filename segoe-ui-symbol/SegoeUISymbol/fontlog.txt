@@ -1,0 +1,79 @@
+Basic Font Information
+
+Segoe® UI Symbol Family
+Foundry: Microsoft Corporation
+Type Style: Symbol
+Languages: Greek
+Categories: UI Fonts
+
+Font Name:
+	Segoe UI Symbol
+Family Name:
+	Segoe UI Symbol
+Version:
+	6.01
+File Name:
+	seguisym.ttf
+Authors/Copyright:
+	© 2012 Microsoft Corporation. All Rights Reserved.
+Trademarks:
+	Segoe is a trademark of the Microsoft group of companies.
+Font Vendor:
+	Microsoft Corp.
+Unicode Ranges:
+	Basic Latin
+	Latin-1 Supplement
+	Spacing Modifier Letters
+	Combining Diacritical Marks
+	General Punctuation
+	Superscripts And Subscripts
+	Currency Symbols
+	Combining Diacritical Marks For Symbols
+	Letterlike Symbols
+	Arrows, Supplemental Arrows-A, Supplemental Arrows-B
+	Mathematical Operators, Supplemental Mathematical Operators, Miscellaneous Mathematical Symbols-A, Miscellaneous Mathematical Symbols-B
+	Miscellaneous Technical
+	Control Pictures
+	Optical Character Recognition
+	Enclosed Alphanumerics
+	Box Drawing
+	Block Elements
+	Geometric Shapes
+	Miscellaneous Symbols
+	Dingbats
+	Non-Plane 0
+	Private Use Area
+	Ogham
+	Runic
+	Braille Patterns
+	Old Italic
+Code Pages:	1252 Latin 1
+	437 US
+Number of Glyphs:
+	6863+
+Symbol Encoded:
+	False
+Fixed Pitch:
+	False
+
+Acknowledgements
+
+If you make modifications be sure to add your name (N), email (E), web-address
+(if you have one) (W) and description (D). This list is in alphabetical order.
+
+N: Dao Van Trong
+E: daovantrong@live.com
+W: http://www.trong.tk/
+D: Contributor - Only Convert
+
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.

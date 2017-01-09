@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <style type="text/css">
+        	.component{
+        		background-color:#eee; 
+        		height: 45vh;
+        	}
+        	.hiddenCont{
+        		display:none;
+        		height: 0vh;
+        		width: 0vw;
+        		transition: height 2s, width 2s;
+        	}
+
+        	.shownCont{
+        		display: block;
+    			height: 100vh;
+    			width: 100vw;
+    			background-color:red; 
+    			transition: height 2s, width 2s;
+        	}
+        </style>
+    </head>
+    <body>
+    	<button id="clickMe" class="uk-button uk-margin-bottom">click me!</button>
+    	<div class="hiddenCont"></div>
+    	<div id="Menu" class="uk-grid uk-width-8-10 uk-align-center">
+    		<div class="uk-width-1-2">
+    			<div class="uk-flex uk-flex-column">
+    				<div class="component uk-margin"></div>
+    				<div class="component uk-margin"></div>
+    			</div>
+    		</div>
+    		<div class="uk-width-1-2">
+    			<div class="uk-flex uk-flex-column">
+    				<div class="component uk-margin"></div>
+    				<div class="component uk-margin"></div>
+    			</div>
+    		</div>
+    	</div>
+    	<script type="text/javascript">
+    		$(function(){
+    			var toggle = true;
+    			$("#clickMe").click(function addTo() {
+    				if(toggle===true){
+    					$(".uk-flex-column").each(function(index, el) {
+    						$(el).removeClass('uk-animation-slide-right');
+	    					setTimeout(function(){
+	    						$(el).addClass('uk-animation-slide-bottom uk-animation-reverse');
+	    					},200+(index*200));
+	    					toggle = false;
+	    				});
+    				}else{
+    					$(".uk-flex-column").each(function(index, el) {
+    						$(el).hide();
+    						$(el).removeClass('uk-animation-slide-bottom uk-animation-reverse');
+    						setTimeout(function(){
+	    						$(el).addClass('uk-animation-slide-right');
+	    						$(el).show();
+	    					},150+(index*150));
+    						toggle = true;
+    					});
+    				}
+    				
+    			});
+    			$(".component").click(function(event) {
+    				//$(this).addClass("uk-animation-scale-down uk-animation-reverse");
+    				$("#Menu").css({
+    					display: 'none'
+    				});
+    				$(".hiddenCont").addClass('shownCont');
+    			});
+    		});
+    	</script>
+    </body>
+</html>
